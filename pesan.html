@@ -1,0 +1,19 @@
+<section class="blok">
+ <div class="wrap">
+  <h2>Form pemesanan</h2>
+  <p>Isi data di bawah ini. Semua kolom bertanda * wajib diisi.</p>
+  <form id="form-pesan" action="https://httpbin.org/post" method="post" novalidate>
+   <div><label for="nama">Nama lengkap *</label><input id="nama" name="nama" autocomplete="name"><span class="err" data-for="nama"></span></div>
+   <div><label for="hp">Nomor HP *</label><input id="hp" name="hp" inputmode="tel" placeholder="08123456789" autocomplete="tel"><span class="err" data-for="hp"></span></div>
+   <div><label for="menu">Pilihan menu *</label><select id="menu" name="menu"><option value="">Pilih menu</option></select><span class="err" data-for="menu"></span></div>
+   <div><label for="jumlah">Jumlah *</label><input id="jumlah" name="jumlah" type="number" min="1" max="20" value="1"><span class="err" data-for="jumlah"></span></div>
+   <div><span class="label" style="font-weight:500">Metode *</span>
+    <div class="radio"><label><input type="radio" name="metode" value="Dine-in"> Dine-in</label><label><input type="radio" name="metode" value="Take away"> Take away</label></div>
+    <span class="err" data-for="metode"></span></div>
+   <div><label for="catatan">Catatan (opsional)</label><textarea id="catatan" name="catatan" rows="3" maxlength="200" placeholder="Misalnya: gula sedikit, es dipisah"></textarea></div>
+   <p>Total perkiraan: <strong id="total">Rp 0</strong></p>
+   <button class="btn" type="submit">Kirim pesanan</button>
+  </form>
+  <div class="ok" id="sukses" role="status" tabindex="-1"></div>
+ </div>
+</section>

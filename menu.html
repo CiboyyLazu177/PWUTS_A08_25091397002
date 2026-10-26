@@ -1,0 +1,29 @@
+<section class="blok">
+ <div class="wrap">
+  <h2>Katalog menu</h2>
+  <div class="tools">
+   <input type="search" id="cari" placeholder="Cari menu, misalnya latte" aria-label="Cari menu">
+   <div class="chips" id="kategori" role="group" aria-label="Filter kategori">
+    <button class="chip on" data-kat="semua">Semua</button>
+    <button class="chip" data-kat="kopi">Kopi</button>
+    <button class="chip" data-kat="nonkopi">Non-kopi</button>
+    <button class="chip" data-kat="makanan">Makanan</button>
+   </div>
+  </div>
+  <p id="kosong" style="display:none">Menu tidak ditemukan. Coba kata kunci lain atau pilih kategori Semua.</p>
+  <div class="grid" id="katalog"></div>
+ </div>
+</section>
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="m-nama">
+ <div class="kotak">
+  <div class="foto" id="m-foto"></div>
+  <div class="isi">
+   <span class="badge" id="m-kat"></span>
+   <h3 id="m-nama"></h3>
+   <p id="m-desk"></p>
+   <p class="harga" id="m-harga" style="font-weight:600;color:var(--red)"></p>
+   <a class="btn" id="m-pesan" href="pesan.html" data-page="pesan">Pesan menu ini</a>
+   <button class="btn alt" id="m-tutup" type="button">Tutup</button>
+  </div>
+ </div>
+</div>
